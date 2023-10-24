@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:background="@drawable/login_register_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="207dp"
+        android:padding="50dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/avatar_image_view"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/tx" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/border_radius"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/account"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_margin="10dp"
+                android:src="@drawable/account" />
+
+            <EditText
+                android:id="@+id/uesrAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_gravity="center|center_horizontal"
+                android:background="@android:color/transparent"
+                android:hint="请输入手机号或用户名"
+                android:textColorHint="@color/light_coral"
+                android:textColor="@color/white"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/border_radius">
+
+            <ImageView
+                android:id="@+id/password"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_margin="10dp"
+                android:src="@drawable/password" />
+
+            <EditText
+                android:id="@+id/userPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_gravity="center|center_horizontal"
+                android:background="@android:color/transparent"
+                android:hint="请输入密码"
+                android:textColorHint="@color/light_coral"
+                android:textColor="@color/white"
+                android:inputType="textPassword"
+                />
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:onClick="login"
+            />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="reg"
+            android:text="注册" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
